@@ -25,6 +25,10 @@ if (finalmemos.length==6) {
 	} else pun = true;
 }
 
+function refreshPage(){
+  window.location.reload();
+}
+
 /*
 $("#info").text("Look daddy, I memorized it!:");
 $("#info").append($("<p>").text("Your name: "+name));

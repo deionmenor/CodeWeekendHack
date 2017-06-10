@@ -11,24 +11,26 @@ console.log(memos);
 console.log(finalmemos);
 
 var pun=false;
-var quote=false;
+var quoted=false;
 var name=finalmemos[0];
 var soname=finalmemos[1];
 var togetherCode=finalmemos[2];
 var statusCode=finalmemos[3];
 if (finalmemos.length==6) {
    	pun = true;
-   	quote = true;
+   	quoted = true;
 } else if (finalmemos.length==5) {
 	if (finalmemos[4]==1) {
-		quote = true;
+		quoted = true;
 	} else pun = true;
 }
 
+/*
 $("#info").text("Look daddy, I memorized it!:");
 $("#info").append($("<p>").text("Your name: "+name));
 $("#info").append($("<p>").text("Your other's name: "+soname));
 $("#info").append($("<p>").text("1 means together: "+togetherCode));
 $("#info").append($("<p>").text("1 is serious, 2 is casual, 3 is wacky: "+statusCode));
-$("#info").append($("<p>").text("Quote: "+quote));
+$("#info").append($("<p>").text("Quote: "+quoted));
 $("#info").append($("<p>").text("Pun: "+pun));
+*/

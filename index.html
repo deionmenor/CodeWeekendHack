@@ -191,7 +191,7 @@
                 <div class="col-lg-10 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                  <form class="form-horizontal">
+                  <form action = "output.html" class="form-horizontal">
                   <fieldset>
 
 
@@ -268,13 +268,17 @@
                       </label>
                   	</div>
                   </div>
+                </br>
+                </br>
+                </br>
 
                   <!-- Button -->
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="submit"></label>
                     <div class="col-md-4">
-                      <input type="button" id="submit" name="submit" class="btn btn-primary" value="Submit"> <br/>
+                      <input type="button" id="submit" name="submit" class="btn btn-primary" value="Preview" onclick="showButt()"> <br/>
                       <h1 id="outputs"></h1>
+                      <button type="submit" id="confirm" hidden="hidden" class="btn btn-primary">Confirm</button>
                     </div>
                   </div>
 

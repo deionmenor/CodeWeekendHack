@@ -1,3 +1,16 @@
+function showButt() {
+	var x = document.getElementById('confirm');
+	x.style.display = 'block';
+}
+
+function hideButt() {
+	var x = document.getElementById('confirm');
+	x.style.display = 'none';
+}
+
+hideButt();
+
+
 $("#submit").on("click",function(){
 	var name = $("#textinput").val();
 	var soname = $("#SOname").val();

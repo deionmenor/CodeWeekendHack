@@ -1,5 +1,16 @@
 // Freelancer Theme JavaScript
 
+var header = $('#header');
+var navbar = $('#mainNav');
+
+$(document).ready(function() {
+  navbar.hide();
+  header.hide();
+
+  navbar.fadeIn(1000);
+  header.fadeIn(3000);
+});
+
 (function($) {
     "use strict"; // Start of use strict
 

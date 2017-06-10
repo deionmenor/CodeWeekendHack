@@ -52,6 +52,6 @@ $("#submit").on("click",function(){
 	$("#outputs").append($("<p>").text("Puns? "+puns));
 
 	$("#outputs").append($("<h3>").text("Please confirm the above."));
-	alert("");
+	
 	return false;
 });

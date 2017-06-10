@@ -94,16 +94,23 @@ var casualSingle = [
   "I like the way you sing. It makes me want to hear more.",
   "I keep thinking about you. I hope you feel the same way.",
   "We should hang sometime.",
-  "I like you. I liked you since a long time ago."
+  "I like you. I've liked you since a long time ago."
 ];
 
 var casualNotSingle = [
-  "I appreciate the way you make time for me."
+  "I appreciate the way you make time for me.",
+  "Maybe things could work out between us.",
+  "Give me a chance, this is honestly kinda embarassing.",
+  "You a very attractive human being.",
+  "Maybe we could, I don't know, get a coffee or something."
 ];
 
 var casualAny = [
   "When I see you, I turn speechless.",
-  "You look great dude, really."
+  "You look great dude, really.",
+  "You make me feel like I'm flying",
+  "I feel weird around you, but in a good way.",
+  "I think you're great."
 ];
 
 var wackyGreeting = [
@@ -209,7 +216,7 @@ if (pun) joke = true;
 if (quoted) quote = true;
 
 
-var numberOfLines = Math.floor((Math.random() * 11) + 5);
+var numberOfLines = Math.floor((Math.random() * (10-7))+7);
 
 if(serious){
   message.push(getRandomLine(seriousGreeting));
@@ -217,10 +224,14 @@ if(serious){
   if(single){
 	  body = seriousAny.concat(seriousSingle);
 	  body = body.concat(seriousSingle);
+    body = body.concat(casualSingle);
+    body = body.concat(casualAny);
   }
   else{
 	  body = seriousAny.concat(seriousNotSingle);
 	  body = body.concat(seriousNotSingle);
+    body = body.concat(casualNotSingle);
+    body = body.concat(casualAny);
   }
 }
 else if(casual){
@@ -228,11 +239,9 @@ else if(casual){
   outroText = getRandomLine(casualOutro);
   if(single){
 	  body = casualAny.concat(casualSingle);
-	  body = body.concat(casualSingle);
   }
   else{
 	  body = casualAny.concat(casualNotSingle);
-	  body = body.concat(casualNotSingle);
   }
 }
 else if(wacky){
@@ -241,10 +250,14 @@ else if(wacky){
   if(single){
 	  body = wackyAny.concat(wackySingle);
 	  body = body.concat(wackySingle);
+    body = body.concat(casualSingle);
+    body = body.concat(casualAny);
   }
   else{
 	  body = wackyAny.concat(wackyNotSingle);
 	  body = body.concat(wackyNotSingle);
+    body = body.concat(casualNotSingle);
+    body = body.concat(casualAny);
   }
 }
 
@@ -258,8 +271,10 @@ if(quote){
 var wordToAdd = ""
 while(message.length < numberOfLines){ //plus one cuz there's a greeting pa (at least in the final thing there is)
 	wordToAdd = getRandomLine(body);
+  console.log(wordToAdd);
 	if(message.indexOf(wordToAdd) < 0){
 		message.push(wordToAdd);
+
 	}
 }
 

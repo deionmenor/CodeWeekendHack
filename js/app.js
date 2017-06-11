@@ -16,9 +16,9 @@ $("#submit").on("click",function(){
 	var soname = $("#SOname").val();
 
 	if ($('input[id=status-0]:checked').length > 0) {
-    	var together = false;
+    	var together = true;
 	}
-	else var together = true;
+	else var together = false;
 
 	if ($('input[id=tone-0]:checked').length > 0) {
     	var tone = "serious";
@@ -52,6 +52,6 @@ $("#submit").on("click",function(){
 	$("#outputs").append($("<p>").text("Puns? "+puns));
 
 	$("#outputs").append($("<h3>").text("Please confirm the above."));
-	
+
 	return false;
 });

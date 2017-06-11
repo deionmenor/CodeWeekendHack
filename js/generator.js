@@ -94,7 +94,8 @@ var casualSingle = [
   "I like the way you sing. It makes me want to hear more.",
   "I keep thinking about you. I hope you feel the same way.",
   "We should hang sometime.",
-  "I like you. I've liked you since a long time ago."
+  "Maybe we could, I don't know, get a coffee or something."
+
 ];
 
 var casualNotSingle = [
@@ -102,7 +103,7 @@ var casualNotSingle = [
   "Maybe things could work out between us.",
   "Give me a chance, this is honestly kinda embarassing.",
   "You a very attractive human being.",
-  "Maybe we could, I don't know, get a coffee or something."
+    "I like you. I've liked you since a long time ago."
 ];
 
 var casualAny = [
@@ -294,5 +295,3 @@ for(var i=0; i<message.length; i++){
     $("#info").append($("<p>").text(name));
   }
 }
-
-

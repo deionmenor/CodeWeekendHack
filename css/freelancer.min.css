@@ -7,7 +7,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden}p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#3d2000}h1,h2,h3,h4,h5,h6{font-family:"Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700}
 
-
+a{
+  color: #444;
+}
 body{
   background-color: #2d2216;
 }
@@ -35,7 +37,7 @@ form{
 #output{
   padding-top: 10%;
   padding-left: 50%;
-  background-color: white
+  /*background: url(../img/parchment)*/
   border-width: 2px;
   border-color: white;
   font-style: monospace;
@@ -43,6 +45,7 @@ form{
 
 #info{
   font-size: 12em;
+  color: white;
 }
 
 .about-text{
